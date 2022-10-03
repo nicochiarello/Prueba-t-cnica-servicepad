@@ -108,7 +108,7 @@ export default function Home() {
               .map((i) => {
                 return (
                   <article className={styles.latesArticlesCard}>
-                    <img src={i.image}></img>
+                    <img src={i.image_url}></img>
                     <div className={styles.latesArticlesInfoContainer}>
                       <span>By {i.author}</span>
                       <h5>{i.titles}</h5>

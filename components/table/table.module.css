@@ -82,7 +82,7 @@
 .itemActive {
   width: 26px;
   height: 1px;
-  background-color: green;
+  background-color: #84E1A7;
   position: absolute;
   top: -20px;
   left: 50;
@@ -94,6 +94,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.navItemsActive{
+  color: #84E1A7;
 }
 
 .counter {

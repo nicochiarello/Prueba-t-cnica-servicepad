@@ -67,6 +67,11 @@
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 47px;
   text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: linear-gradient(90deg, #84E1A7 4.85%, #81D6DB 100%);
 }
 .btnDelete {
   width: 100%;
@@ -79,6 +84,10 @@
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 47px;
   text-align: center;
+  cursor: pointer;
 }
 
+.btnDelete:hover{
+  background: linear-gradient(90deg, #e0a040 0%, #c64c4c 100%);
+}
 

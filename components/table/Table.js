@@ -109,7 +109,7 @@ const Table = () => {
           {Object.entries(posts).map((i) => {
             if (i[0] == page) {
               return (
-                <li onClick={() => setPage(+i[0])} className={styles.navItems}>
+                <li onClick={() => setPage(+i[0])} className={styles.navItems + " " + styles.navItemsActive}>
                   {i[0]} <div className={styles.itemActive}></div>
                 </li>
               );

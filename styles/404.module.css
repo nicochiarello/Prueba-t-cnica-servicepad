@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 35px;
+    padding: 0 15rem;
+    text-align: center;
+}
