@@ -1,0 +1,46 @@
+.container {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 165px;
+}
+
+.navbarElements {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 7px;
+  color: #99989d;
+  cursor: pointer;
+}
+
+.elementActive li{
+  color: red;
+}
+.navbarElements a {
+  color: #99989d;
+}
+
+.elementActive a {
+  text-decoration: underline;
+  text-decoration-color: #36CB6D;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 32px;
+  color: #2D314D;
+
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 2rem;
+  }
+}

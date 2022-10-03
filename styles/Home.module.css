@@ -1,129 +1,286 @@
-.container {
-  padding: 0 2rem;
+.mainInfoContainer {
+  width: 100%;
+  height: 660px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 165px;
+  background: #fafafa;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.mainInfo {
+  width: 520px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 35px;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
+.mainInfo h2 {
+  font-weight: 300;
+  font-size: 53px;
+  line-height: 62px;
+  /* or 117% */
   margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  color: #2d314e;
 }
 
-.title,
-.description {
-  text-align: center;
+.mainInfo p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 158% */
+  width: 480px;
+  letter-spacing: -0.01em;
+
+  color: #959499;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.mainInfoImagesContainer {
+  width: calc(100vw - 685px);
+  height: 100%;
+
+  position: relative;
 }
 
-.code {
+.mainInfoTextureContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.mainInfoTexture {
+  height: 150%;
+  width: 150%;
+  top: -50%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.mainInfoPhones {
+  width: 50vw;
+  height: 120%;
+  position: absolute;
+  object-fit: contain;
+  top: 0%;
+  right: -15%;
+  z-index: 100;
+}
+
+.bankDetailsContainer {
+  width: 100%;
+  height: 660px;
+  padding: 80px 165px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.bankDetailsContainer h3 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 62px;
+  /* identical to box height, or 155% */
+  margin: 15px 0;
+  letter-spacing: -0.02em;
+
+  color: #2d314e;
+}
+
+.bankDetailsContainer p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+  /* or 147% */
+  margin: 0;
+  color: #959499;
+  width: 600px;
+}
+
+.bankFeaturesContainer {
+  display: flex;
+  width: 100%;
+  height: 280px;
+  gap: 2rem;
+}
+
+.featuresCard {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  width: 25%;
+  gap: 20px;
+}
+
+.featuresCard h4 {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 62px;
+  /* identical to box height, or 270% */
+
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.featuresCard p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+  width: 100%;
+  letter-spacing: -0.04em;
+
+  color: #959499;
+  margin: 0;
+}
+
+.featuresCardLogo {
+  height: 72px;
+  width: 72px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featuresCardLogo img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.latestArticlesContainer {
   background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  width: 100%;
+  padding: 80px 165px;
 }
 
-.grid {
+.latestArticlesInfo {
+  width: 100%;
+
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  justify-content: space-between;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.latestArticlesContainer h3 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 62px;
+  /* identical to box height, or 155% */
+
+  letter-spacing: -0.02em;
+
+  color: #2d314e;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.latestArticlesCardsContainer {
+  width: 100%;
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.latesArticlesCard {
+
+width: 100%;
+  height: 400px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.card p {
+.latesArticlesCard img {
+  height: 45%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+}
+
+.latesArticlesInfoContainer {
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.latesArticlesCard span {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 18px;
+  /* identical to box height, or 180% */
+
+  letter-spacing: -0.02em;
+
+  color: #959499;
+}
+
+.latesArticlesCard h5 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  /* or 138% */
+
+  letter-spacing: -0.02em;
+
+  color: #2d314e;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.latesArticlesCard p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  /* or 138% */
+  margin: 0;
+
+  letter-spacing: -0.02em;
+
+  color: #959499;
 }
 
-@media (max-width: 600px) {
-  .grid {
+@media (max-width: 1440px) {
+  .mainInfoPhones {
     width: 100%;
+    height: 120%;
+    position: absolute;
+    object-fit: initial;
+    top: 0%;
+    right: -15%;
+    z-index: 100;
+  
+  }
+  .mainInfoImagesContainer {
+    width: calc(100vw - 2rem);
+  }
+  .mainInfoContainer {
+    padding-left: 2rem;
+  }
+  .mainInfoTexture {
+    height: 100%;
+    width: 200%;
+    top: 0%;
+    object-fit: cover;
+    position: absolute;
+  }
+  .bankDetailsContainer {
+    width: 100%;
+    height: 660px;
+    padding: 80px 2rem;
+    display: flex;
     flex-direction: column;
+    gap: 60px;
+  }
+  .latestArticlesContainer {
+    background: #fafafa;
+    width: 100%;
+    padding: 80px 2rem;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
-}

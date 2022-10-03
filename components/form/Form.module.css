@@ -1,0 +1,84 @@
+.formContainer {
+  padding: 50px 165px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 690px;
+  height: 710px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 41px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+  gap: 10px;
+  justify-content: space-around;
+}
+.formLoader {
+  width: 690px;
+  height: 710px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 60px;
+  gap: 25px;
+}
+
+.form input {
+  border: 1px solid #d1d5db;
+  /* shadow/sm */
+
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  height: 50px;
+  width: 100%;
+}
+
+.form label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  color: #2d314e;
+}
+
+.form textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+.btn {
+  width: 100%;
+  background: linear-gradient(90deg, #31cf75 0%, #2dbbc6 100%);
+  /* shadow/sm */
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 47px;
+  text-align: center;
+}
+.btnDelete {
+  width: 100%;
+  background: linear-gradient(90deg, #D8850A 0%, #C62D2D 100%);
+  /* shadow/sm */
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 47px;
+  text-align: center;
+}
+
+

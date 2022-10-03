@@ -2,25 +2,18 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Public Sans', sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+  background: #f4f5f7;
 }
 
 a {
-  color: inherit;
+  color: #84E1A7;
+
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
 }

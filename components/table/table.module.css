@@ -1,0 +1,105 @@
+.tableContainer {
+  width: 100%;
+  padding: 30px 165px;
+}
+
+.tableContainer h4 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 62px;
+  /* identical to box height, or 155% */
+
+  letter-spacing: -0.02em;
+
+  color: #2d314e;
+  margin: 0;
+}
+
+.tableContainer p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  /* identical to box height, or 141% */
+
+  color: #99989d;
+}
+
+.table {
+  width: 100%;
+  background: #ffffff;
+  /* gray/200 */
+
+  border: 1px solid #e5e7eb;
+  /* /shadow/base */
+  overflow: hidden;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.tableDescription {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 30% 30% 15% 5%;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  /* gray/500 */
+  padding: 15px 25px;
+  color: #6b7280;
+  background: #f9fafb;
+}
+
+.tableItemLight {
+  background: #f4f5f7;
+}
+
+.tableAuthor {
+  color: #2d314e;
+}
+
+.paginationContainer {
+  margin: 2rem 0rem;
+  width: 100%;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.paginationNav {
+  list-style: none;
+  display: flex;
+  gap: 2px;
+  padding: 0;
+}
+
+.itemActive {
+  width: 26px;
+  height: 1px;
+  background-color: green;
+  position: absolute;
+  top: -20px;
+  left: 50;
+}
+
+.navItems {
+  position: relative;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+

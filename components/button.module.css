@@ -1,0 +1,17 @@
+.button {
+  background: linear-gradient(90deg, #31cf70 4.85%, #2cb9cb 100%);
+  border-radius: 90px;
+  padding: 1rem 2rem;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  transition: all 0.4s ease;
+  cursor: pointer;
+
+}
+
+.button:hover{
+  background: linear-gradient(90deg, #84E1A7 4.85%, #81D6DB 100%);
+}
